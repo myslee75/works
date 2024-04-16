@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Definición de las variables
+        int numero;
+
+        // Leer el número ingresado por el usuario
+        System.out.print("Ingrese un número: ");
+        numero = scanner.nextInt();
+
+        // Verificar si el número es positivo y par/impar
+        if (numero > 0) {
+            System.out.println("El número es positivo.");
+            
+            // Condición anidada para verificar si el número es par o impar
+            if (numero % 2 == 0) {
+                System.out.println("El número es par.");
+            } else {
+                System.out.println("El número es impar.");
+            }
+        } else {
+            System.out.println("El número no es positivo.");
+        }
+
+        // Cerrar el scanner para evitar pérdida de recursos
+        scanner.close();
+    }
+}
